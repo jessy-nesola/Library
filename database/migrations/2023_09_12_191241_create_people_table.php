@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -12,13 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('books', function (Blueprint $table) {
-            //nome, n. di pagine, anno di pubblicazione
-            //docs; https://laravel.com/docs/10.x/migrations#available-column-types
+        Schema::create('people', function (Blueprint $table) {
             $table->id();
-            $table->string('name',100);
-            $table->integer('pages');
-            $table->integer('year')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('books');
+        Schema::dropIfExists('people');
     }
 };
