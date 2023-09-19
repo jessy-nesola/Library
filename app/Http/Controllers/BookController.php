@@ -40,6 +40,21 @@ class BookController extends Controller
         //    'pages' => 'required'
         // });
         //Book::create($request->validated());
-        return redirect()->route('index')->with('success', 'Libro Caricato');
+        return redirect()->route('books.index')->with('success', 'Libro Caricato');
+    }
+
+    public function show(Book $book)
+    {
+        // $book = Book::find($book);
+
+
+        // $book = Book::find($book);
+        // if (!$book) {
+        //     abort(404);
+        // }
+
+        //$book = Book::findOrFail($book);
+        return view('show', compact('book'));
     }
 }
+

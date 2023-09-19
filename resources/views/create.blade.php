@@ -14,6 +14,7 @@
                 @endif
                 <form action="{{ route('books.store') }}" method="POST">
                     @csrf
+                    @method('POST')
                     <div class="form-floating mb-3">
                         <input class="form-control @error('name') is-invalid @enderror" id="name"
                             value="{{ old('name') }}" name="name" type="text">
