@@ -12,7 +12,7 @@
                         </ul>
                     </div>
                 @endif
-                <form action="{{ route('store') }}" method="POST">
+                <form action="{{ route('books.store') }}" method="POST">
                     @csrf
                     <div class="form-floating mb-3">
                         <input class="form-control @error('name') is-invalid @enderror" id="name"
