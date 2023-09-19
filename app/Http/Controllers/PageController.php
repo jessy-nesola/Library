@@ -24,7 +24,22 @@ class PageController extends Controller
 
     public function store(Request $request) 
     {
-        Book::create($request->all());
-        return 'ok';
+        //primo metodo
+        //Book::create($request->all());
+        
+        //secondo metodo
+        Book::create([
+            'name' => $request->name,
+            'pages' => $request->pages,
+            'year' => $request->year
+        ]);
+
+        //terzo metodo
+        // $request->validate({
+        //    'name' => 'required',
+        //    'pages' => 'required'
+        // });
+        //Book::create($request->validated());
+        return redirect()->route('index')->with('success', 'Libro Caricato');
     }
 }

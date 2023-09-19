@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[PageController::class, 'index'])->name('name');
+Route::get('/',[PageController::class, 'index'])->name('index');
 Route::get('/create',[PageController::class, 'create'])->name('create');
 Route::post('/store',[PageController::class, 'store'])->name('store');
