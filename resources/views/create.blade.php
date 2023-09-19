@@ -12,7 +12,7 @@
                         </ul>
                     </div>
                 @endif
-                <form action="{{ route('books.store') }}" method="POST">
+                <form action="{{ route('books.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @method('POST')
                     <div class="form-floating mb-3">
@@ -32,7 +32,13 @@
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
                     </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="image" name="image" type="file">
 
+                        @error('image')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
                     <div class="form-floating mb-3">
                         <input class="form-control" id="page" name="year" value="{{ old('year') }}"
                             type="text">

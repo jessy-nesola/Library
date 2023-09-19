@@ -2,43 +2,57 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\BookStoreRequest;
 use Illuminate\Http\Request;
 use App\Models\Book;
+use Illuminate\Support\Str;
 
 class BookController extends Controller
 {
-    public function index() 
+    public function index()
     {
         $books = Book::all();
         return view('index', ['books' => $books]);
+        //return view('index', compact('books'));
+
         // return view('index', [
-        //     'books' => Book::all(),
-        //     'authors' => Author::all(),
+        //     'books' => Book::all()
         // ]);
     }
 
-    public function create() 
+    public function create()
     {
         return view('create');
     }
 
-    public function store(Request $request) 
+    public function store(BookStoreRequest $request)
     {
+        //$extension_name = $request->file('image')->getClientOriginalExtension();
+
+
+        $path_image = '';
+        if ($request->hasFile('image')) {
+            $file_name = $request->file('image')->getClientOriginalName();
+            //$path_image = $request->file('image')->store();//Metodo semplice
+            $path_image = $request->file('image')->storeAs('public/images', $file_name); //Scrivo nel server
+            // } else {
+            //     $path_image = 'default.jpeg';
+        }
         //primo metodo
         //Book::create($request->all());
-        
         //secondo metodo
         Book::create([
             'name' => $request->name,
             'pages' => $request->pages,
-            'year' => $request->year
+            'year' => $request->year,
+            'image' => $path_image,
+            'uri' => Str::slug($request->name, '-')
         ]);
-
-        //terzo metodo
-        // $request->validate({
-        //    'name' => 'required',
-        //    'pages' => 'required'
-        // });
+        //Terzo metodo
+        // $request->validate([
+        //     'name' => 'required',
+        //     'pages' => 'required'
+        // ]);
         //Book::create($request->validated());
         return redirect()->route('books.index')->with('success', 'Libro Caricato');
     }
@@ -57,4 +71,3 @@ class BookController extends Controller
         return view('show', compact('book'));
     }
 }
-

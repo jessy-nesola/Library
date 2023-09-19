@@ -12,6 +12,6 @@ class Book extends Model
     //protected $table = 'libri-belli-da-leggere';
 
     protected $fillable = [
-        'name', 'year', 'pages'
+        'name', 'year', 'pages', 'uri', 'image'
     ];
 }
