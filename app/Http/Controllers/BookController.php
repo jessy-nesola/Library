@@ -12,7 +12,7 @@ class BookController extends Controller
     public function index()
     {
         $books = Book::all();
-        return view('index', ['books' => $books]);
+        return view('books.index', ['books' => $books]);
         //return view('index', compact('books'));
 
         // return view('index', [
@@ -22,7 +22,7 @@ class BookController extends Controller
 
     public function create()
     {
-        return view('create');
+        return view('books.create');
     }
 
     public function store(BookStoreRequest $request)
@@ -68,6 +68,6 @@ class BookController extends Controller
         // }
 
         //$book = Book::findOrFail($book);
-        return view('show', compact('book'));
+        return view('books.show', compact('book'));
     }
 }

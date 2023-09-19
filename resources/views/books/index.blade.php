@@ -1,28 +1,5 @@
 <x-layout>
-    <!-- Header-->
-    <header class="bg-dark py-5">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center justify-content-center">
-                <div class="col-lg-8 col-xl-7 col-xxl-6">
-                    <div class="my-5 text-center text-xl-start">
-                        <h1 class="display-5 fw-bolder text-white mb-2">Biblioteca di Jessy
-                        </h1>
-                        <p class="lead fw-normal text-white-50 mb-4"></p>
-                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="{{ route('books.create') }}">Crea
-                                Libro</a>
-                            <a class="btn btn-outline-light btn-lg px-4" href="{{ route('books.index') }}">Elenco
-                                Libri</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
-                        src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/1-stuttgart-library-beautiful-modern-white-futuristic-library-in-germany-luis-pina.jpg"
-                        alt="..." /></div>
-            </div>
-        </div>
-    </header>
-    <!-- Blog preview section-->
+
     <section class="py-5">
         <div class="container px-5 my-5">
             <div class="row gx-5 justify-content-center">
@@ -38,17 +15,16 @@
                 @foreach ($books as $book)
                     <div class="col-lg-4 mb-5">
                         <div class="card h-100 shadow border-0">
-                            <img class="card-img-top" src="{{Storage::url($book->image)}}"
+                            <img class="card-img-top" width="10rem" src="{{ Storage::url($book->image) }}"
                                 alt="..." />
                             <div class="card-body p-4">
                                 <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
                                 <a class="text-decoration-none link-dark stretched-link"
-                                    href="{{ route('books.show', ['book' => $book->id]) }}>
-                                <h5 class="card-title
-                                    mb-3">{{ $book->name }}</h5>
+                                    href="{{ route('books.show', ['book' => $book->id]) }}">
+                                    <h5 class="card-title mb-3">{{ $book->name }}</h5>
                                 </a>
-                                <p class="card-text mb-0">Some quick example text to build on the card title and make
-                                    up the bulk of the card's content.</p>
+                                <p class="card-text mb-0">Some quick example text to build on the card title and make up
+                                    the bulk of the card's content.</p>
                             </div>
                             <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                 <div class="d-flex align-items-end justify-content-between">
@@ -66,7 +42,10 @@
                     </div>
                 @endforeach
 
+
+
             </div>
+
         </div>
     </section>
 </x-layout>
