@@ -22,7 +22,7 @@
         <div class="list-group w-auto">
             <a href="{{ route('books.index') }}" class="list-group-item list-group-item-action d-flex gap-3 py-3"
                 aria-current="true">
-                <img src="{{ asset('/assets/images/book.png') }}" alt="twbs" width="32" height="32"
+                <img src="{{ asset('/assets/images/book.png') }}" alt="none" width="32" height="32"
                     class="rounded-circle flex-shrink-0">
                 <div class="d-flex gap-2 w-100 justify-content-between">
                     <div>
@@ -33,7 +33,7 @@
                 </div>
             </a>
             <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                <img src="{{ asset('/assets/images/category.png') }}" alt="twbs" width="32" height="32"
+                <img src="{{ asset('/assets/images/category.png') }}" alt="none" width="32" height="32"
                     class="rounded-circle flex-shrink-0">
                 <div class="d-flex gap-2 w-100 justify-content-between">
                     <div>
@@ -44,7 +44,7 @@
                 </div>
             </a>
             <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                <img src="{{ asset('/assets/images/author.png') }}" alt="twbs" width="32" height="32"
+                <img src="{{ asset('/assets/images/author.png') }}" alt="none" width="32" height="32"
                     class="rounded-circle flex-shrink-0">
                 <div class="d-flex gap-2 w-100 justify-content-between">
                     <div>
