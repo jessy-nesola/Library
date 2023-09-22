@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Lezione DB</title>
+    <title>Bookstore di Jessy</title>
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
@@ -14,7 +14,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 bg-secondary">
 
     <main class="flex-grow-1">
 
