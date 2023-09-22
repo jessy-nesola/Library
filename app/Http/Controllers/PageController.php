@@ -11,4 +11,9 @@ class PageController extends Controller
    {
       return view('homepage');
    }
+
+   public function profile()
+   {
+      return view('profile');
+   }
 }

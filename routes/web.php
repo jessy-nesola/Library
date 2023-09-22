@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'homepage'])
   ->name('homepage');
 
+Route::get('/profile', [PageController::class, 'profile'])
+  ->name('profile');
+
 Route::get('/libri', [BookController::class, 'index'])
   ->name('books.index');
 
