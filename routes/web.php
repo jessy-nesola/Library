@@ -22,8 +22,7 @@ Route::get('/libri', [BookController::class, 'index'])
   ->name('books.index');
 
 Route::get('/libri/create', [BookController::class, 'create'])
-  ->name('books.create')
-  ->middleware('auth');
+  ->name('books.create');
 
 Route::post('/libri/store', [BookController::class, 'store'])
   ->name('books.store');

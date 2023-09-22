@@ -9,6 +9,13 @@ use Illuminate\Support\Str;
 
 class BookController extends Controller
 {
+    public function __construct()
+    {
+        //$this->middleware('auth');                            // questo protegge TUTTI i metodi
+        //$this->middleware('auth')->only('create');            // questo protegge SOLO i metodi specificati
+        $this->middleware('auth')->except('index','show');      // questo protegge tutti i metodi TRANNE quelli specificati
+    }
+
     public function index()
     {
         $books = Book::all();
