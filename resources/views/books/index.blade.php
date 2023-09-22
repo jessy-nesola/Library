@@ -6,8 +6,7 @@
           <div class="col-lg-8 col-xl-6">
             <div class="text-center">
               <h2 class="fw-bolder">Libri caricati</h2>
-              <p class="lead fw-normal text-muted mb-5">Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Eaque fugit ratione dicta mollitia. Officiis ad.</p>
+              <p class="lead fw-normal text-muted mb-5">Troverai qui tutto ció che é stato caricato:</p>
             </div>
           </div>
         </div>
