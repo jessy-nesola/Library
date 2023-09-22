@@ -19,7 +19,7 @@
     </header>
 
 
-    <div class="container my-5">
+    <div class="container my-5 ">
         <div class="list-group">
             <a href="{{ route('books.index') }}"
                 class="list-group-item list-group-item-action d-flex align-items-center bg-dark">
