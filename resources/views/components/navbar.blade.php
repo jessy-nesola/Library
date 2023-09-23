@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+<nav class="navbar navbar-expand-lg fixed-top shadow">
     <div class="container px-5">
         <a class="navbar-brand text-light" href="{{ route('homepage') }}">Aulab DataBase</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -8,10 +8,10 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link " href="{{ route('login') }}">Entra</a>
+                        <a class="nav-link text-light" href="{{ route('login') }}">Entra</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="{{ route('register') }}">Registrati</a>
+                        <a class="nav-link text-light" href="{{ route('register') }}">Registrati</a>
                     </li>
                 @endguest
                 @auth

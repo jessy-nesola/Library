@@ -1,4 +1,28 @@
-@import 'bootstrap';
+@import "bootstrap";
+
+.navbar {
+    background: linear-gradient(to bottom right, #ff48b6, #ff7e6c);
+}
+
+.footer {
+  background: linear-gradient(to bottom right, #ff48b6, #ff7e6c);
+}
+
+.body-background {
+    background: linear-gradient(
+        to bottom right,
+        #dd95f7 0%,
+        #9aadf9 50%,
+        #7fc9d9 100%
+    );
+}
+
+.snow-background {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+
+
 
 .feature {
     display: inline-flex;
@@ -7,13 +31,13 @@
     height: 3rem;
     width: 3rem;
     font-size: 1.5rem;
-  }
-  
-  .bg-featured-blog {
+}
+
+.bg-featured-blog {
     height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 15rem;
-  }
+}

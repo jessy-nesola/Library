@@ -14,7 +14,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="d-flex flex-column min-vh-100 bg-secondary">
+<body class="body-background d-flex flex-column min-vh-100">
 
     <main class="flex-grow-1">
 
@@ -34,11 +34,11 @@
         {{ $slot }}
     </main>
 
-    <footer class="bg-dark py-4">
+    <footer class="footer py-4">
         <div class="container px-5">
             <div class="row align-items-center justify-content-center">
                 <div class="col-auto">
-                    <p class="small m-0 text-white">Copyright &copy; Your Website 2023</p>
+                    <p class="small m-0 text-light">Copyright &copy; Your Website 2023</p>
                 </div>
             </div>
         </div>

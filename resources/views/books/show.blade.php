@@ -4,8 +4,8 @@
         <div class="container px-5 my-5">
             <div class="row gx-5">
                 <div class="col-lg-4 mb-5">
-                    <div class="card h-100 shadow border-0">
-                        <img class="card-img-top" src="https://dummyimage.com/600x350/ced4da/6c757d" alt="..." />
+                    <div class="snow-background card h-100 shadow border-0">
+                        <img class="card-img-top" src="{{Storage::url($book->image)}}" alt="..." />
                         <div class="card-body p-4">
                             <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
                             <a class="text-decoration-none link-dark stretched-link"
@@ -32,5 +32,4 @@
             </div>
         </div>
     </section>
-    
 </x-layout>
