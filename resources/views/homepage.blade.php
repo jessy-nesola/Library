@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
                     <img class="img-fluid rounded-3 my-5 shadow"
-                        src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/1-stuttgart-library-beautiful-modern-white-futuristic-library-in-germany-luis-pina.jpg"
+                        src="{{ asset('/assets/images/libreria.jpg') }}"
                         alt="Library" />
                 </div>
             </div>
@@ -38,7 +38,7 @@
                     <p class="mb-0 text-dark">Gestione della risorsa Categorie</p>
                 </div>
             </a>
-            <a href="#" class="list-group-item list-group-item-action d-flex align-items-center snow-background">
+            <a href="{{route('authors.index')}}" class="list-group-item list-group-item-action d-flex align-items-center snow-background">
                 <img src="{{ asset('/assets/images/author.png') }}" alt="none" width="32" height="32"
                     class="rounded-circle flex-shrink-0 me-3">
                 <div class="flex-grow-1">

@@ -1,6 +1,6 @@
 <x-layout>
     <div class="container my-5">
-      <div class="row justify-content-center">
+      <div class="">
         <div class="col-12 col-md-8">
           <form class="p-5 shadow rounded snow-background" action="{{route('login')}}" method="POST">
             @method('POST')
