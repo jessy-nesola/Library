@@ -5,7 +5,7 @@
                 <div class="col-lg-4 mb-5">
                     <div class="card h-100 shadow border-0 snow-background">
                         <div class="card-body p-4">
-                            <h5 class="badge bg-primary bg-gradient rounded-pill mb-2">Profilo</h5>
+                            <h5 class="badge bg-secondary text-light bg-gradient">Profilo</h5>
                             <ul>
                                 <li class="card-text text-dark mb-0">Nome: {{ Auth::user()->name }}</li>
                                 <li class="card-text text-dark mb-0">Email: {{ Auth::user()->email }}</li>

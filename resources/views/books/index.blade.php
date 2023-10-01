@@ -13,7 +13,7 @@
     @endif
     <div class="align-middle gap-2 d-flex justify-content-between ">
       <h3>Elenco Libri inseriti</h3>
-      <a href="{{route('books.create')}}" class="btn btn-success " type="button">Crea Nuovo Libro</a>
+      <a href="{{route('books.create')}}" class="btn btn-success" type="button">Crea Nuovo Libro</a>
     </div>
     <table class="table border mt-2">
       <thead>
