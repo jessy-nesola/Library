@@ -33,7 +33,7 @@
             </div>
   
             <button type="submit" class="btn btn-primary text-light bg-gradient">Registrati</button>
-            <a href="{{route('login')}}" class="btn btn-outline-secondary">Gia' iscritto?</a>
+            <a href="{{route('login')}}" class="btn btn-secondary text-light bg-gradienty">Gia' iscritto?</a>
           </form>
         </div>
       </div>

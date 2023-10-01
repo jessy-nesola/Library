@@ -1,6 +1,6 @@
 <x-layout>
     <div class="container my-5">
-      <div class="">
+      <div class="row justify-content-center">
         <div class="col-12 col-md-8">
           <form class="p-5 shadow rounded snow-background" action="{{route('login')}}" method="POST">
             @method('POST')
@@ -28,7 +28,7 @@
             </div>
   
             <button type="submit" class="btn btn-primary text-light bg-gradient">Accedi</button>
-            <a href="{{route('register')}}" class="btn btn-outline-secondary">Non sei registrato?</a>
+            <a href="{{route('register')}}" class="btn btn-secondary text-light bg-gradient">Non sei registrato?</a>
           </form>
         </div>
       </div>
