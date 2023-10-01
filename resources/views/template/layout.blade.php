@@ -16,7 +16,7 @@
 
 <body class="body-background d-flex flex-column min-vh-100">
 
-    <main class="flex-grow-1">
+    <main class="flex-grow-1 main-padding">
 
         <x-navbar />
 
@@ -44,6 +44,7 @@
         </div>
     </footer>
 
+    <script src="{{ asset('js/navbar-scroll.js') }}"></script>
 </body>
 
 </html>

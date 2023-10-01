@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg shadow ">
+<nav class="navbar navbar-expand-lg fixed-top shadow">
     <div class="container px-5">
         <a class="navbar-brand text-light" href="{{ route('homepage') }}">Libreria</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

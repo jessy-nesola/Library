@@ -4,8 +4,22 @@
     background: linear-gradient(to bottom right, #ff48b6, #ff7e6c);
 }
 
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.25s ease-in-out; /* Animazione più fluida per la scomparsa */
+}
+
+.navbar-visible {
+    transform: translateY(0); /* Riporta la navbar nella posizione di partenza */
+    transition: transform 0.25s ease-in-out; /* Animazione più fluida per la riapparizione */
+}
+
+.main-padding {
+    padding-top: 50px;
+}
+
 .footer {
-  background: linear-gradient(to bottom right, #ff48b6, #ff7e6c);
+    background: linear-gradient(to bottom right, #ff48b6, #ff7e6c);
 }
 
 .body-background {
@@ -18,11 +32,8 @@
 }
 
 .snow-background {
-  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
-
-
-
 
 .feature {
     display: inline-flex;
