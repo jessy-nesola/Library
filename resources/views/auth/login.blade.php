@@ -19,11 +19,11 @@
   
   
             <div class="mb-3">
-              <label for="email" class="form-label text-dark">Email utente</label>
+              <label for="email" class="form-label text-dark">EMAIL UTENTE</label>
               <input type="email" name="email" class="form-control" id="email" required>
             </div>
             <div class="mb-3">
-              <label for="password" class="form-label text-dark">Password</label>
+              <label for="password" class="form-label text-dark">PASSWORD</label>
               <input type="password" name="password" class="form-control" id="password" required>
             </div>
   

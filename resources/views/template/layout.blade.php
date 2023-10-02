@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Bookstore di Jessy</title>
+    <title>Libreria di Jessy</title>
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
@@ -34,11 +34,11 @@
         {{ $slot }}
     </main>
 
-    <footer class="footer py-4">
+    <footer class="footer footer-thin py-4">
         <div class="container px-5">
             <div class="row align-items-center justify-content-center">
                 <div class="col-auto">
-                    <p class="small m-0 text-light">Copyright &copy; Your Website 2023</p>
+                    <p class="small m-0 text-light">Copyright &copy; Website by Jessy, 2023</p>
                 </div>
             </div>
         </div>

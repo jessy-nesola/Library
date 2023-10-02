@@ -12,15 +12,15 @@
     </div>
     @endif
     <div class="align-middle gap-2 d-flex justify-content-between">
-        <h3>Elenco Autori inseriti</h3>
-        <a href="{{route('authors.create')}}" class="btn btn-success">Crea Nuovo Autore</a>
+        <h3>Lista Autori caricati</h3>
+        <a href="{{route('authors.create')}}" class="btn btn-success">Crea nuovo Autore</a>
     </div>
     <table class="table border mt-2">
         <thead>
             <tr>
                 <th scope="col" class="snow-background">#</th>
-                <th scope="col" class="snow-background">Nome</th>
-                <th scope="col" class="snow-background">Cognome</th>
+                <th scope="col" class="snow-background">NOME</th>
+                <th scope="col" class="snow-background">COGNOME</th>
                 <th scope="col" class="snow-background"></th>
             </tr>
         </thead>
@@ -39,7 +39,7 @@
                         <form action="{{route('authors.destroy', compact('author'))}}" method="POST">
                             @method('DELETE')
                             @csrf
-                            <button type="submit" class="btn btn-danger ">Cancella</button>
+                            <button type="submit" class="btn btn-danger ">Elimina</button>
                         </form>
                         @endauth
                     </div>

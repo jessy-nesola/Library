@@ -15,25 +15,25 @@
             </div>
             @endif
             <div class="mb-3">
-              <label for="name" class="form-label text-dark">Nome utente</label>
+              <label for="name" class="form-label text-dark">NOME UTENTE</label>
               <input type="text" name="name" class="form-control" id="name" required>
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label text-dark">Email utente</label>
+              <label for="email" class="form-label text-dark">EMAIL UTENTE</label>
               <input type="email" name="email" class="form-control" id="email" required>
             </div>
             <div class="mb-3">
-              <label for="password" class="form-label text-dark">Password</label>
+              <label for="password" class="form-label text-dark">PASSWORD</label>
               <input type="password" name="password" class="form-control" id="password" required>
             </div>
             <div class="mb-3">
-              <label for="password_confirmation" class="form-label text-dark">Conferma password</label>
+              <label for="password_confirmation" class="form-label text-dark">CONFERMA PASSWORD</label>
               <input type="password" name="password_confirmation" class="form-control" id="password_confirmation"
                 required>
             </div>
   
             <button type="submit" class="btn btn-primary text-light bg-gradient">Registrati</button>
-            <a href="{{route('login')}}" class="btn btn-secondary text-light bg-gradienty">Gia' iscritto?</a>
+            <a href="{{route('login')}}" class="btn btn-secondary text-light bg-gradienty">Sei giá iscritto?</a>
           </form>
         </div>
       </div>

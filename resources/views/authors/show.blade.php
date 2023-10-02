@@ -4,9 +4,10 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-5">
                 <div class="p-5 shadow rounded snow-background">
-                    <p>Nome Autore: {{$author->firstname}} </p>
-                    <p>Cognome Autore: {{$author->lastname}} </p>
-                    <p>Età Autore: {{$author->birthday}} </p>
+                    <h5 class="badge bg-secondary text-light bg-gradient">PROFILO</h5>
+                    <p>NOME: {{$author->firstname}} </p>
+                    <p>COGNOME: {{$author->lastname}} </p>
+                    <p>ETÁ: {{$author->birthday}} </p>
                 </div>
             </div>
         </div>

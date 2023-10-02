@@ -12,14 +12,14 @@
     </div>
     @endif
     <div class="align-middle gap-2 d-flex justify-content-between">
-        <h3>Elenco Categorie inseriti</h3>
-        <a href="{{route('categories.create')}}" class="btn btn-success">Crea Nuova Categoria</a>
+        <h3>Elenco Categorie caricate</h3>
+        <a href="{{route('categories.create')}}" class="btn btn-success">Crea nuova categoria</a>
     </div>
     <table class="table border mt-2">
         <thead>
             <tr>
                 <th scope="col" class="snow-background">#</th>
-                <th scope="col" class="snow-background">Nome</th>
+                <th scope="col" class="snow-background">NOME</th>
                 <th scope="col" class="snow-background"></th>
             </tr>
         </thead>

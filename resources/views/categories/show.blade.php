@@ -4,7 +4,8 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-5">
                 <div class="p-5 shadow rounded snow-background">
-                    <p>Nome Categoria: {{$category->name}} </p>
+                    <h5 class="title"><strong>CATEGORIA:</strong></h5>
+                    <p>{{$category->name}}</p>
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
                         @csrf
                         @method('PUT')
                         <div class="mb-3">
-                            <label for="name" class="form-label text-dark">Nome</label>
+                            <label for="name" class="form-label text-dark">NOME</label>
                             <input class="form-control @error('name') is-invalid @enderror" id="name"
                                 value="{{$book->name}}" name="name" type="text">
                             @error('name')
@@ -25,7 +25,7 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="page" class="form-label text-dark">Pagine</label>
+                            <label for="page" class="form-label text-dark">N. PAGINE</label>
                             <input class="form-control" id="page" name="pages" value="{{$book->pages}}"
                                 type="text">
                             @error('pages')
@@ -40,7 +40,7 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="year" class="form-label text-dark">Anno</label>
+                            <label for="year" class="form-label text-dark">ANNO</label>
                             <input class="form-control" id="year" name="year" value="{{$book->year}}"
                                 type="text">
                             @error('year')
@@ -48,7 +48,7 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="year" class="form-label text-dark">Seleziona Autore</label>
+                            <label for="year" class="form-label text-dark">SELEZIONA AUTORE</label>
                             <select class="form-control" name="author_id">
                                 @foreach ($authors as $author)
                                 <option value="{{$author->id}}" @if($author->id == $book->author_id) selected @endif>{{$author->firstname . ' ' . $author->lastname}}</option>

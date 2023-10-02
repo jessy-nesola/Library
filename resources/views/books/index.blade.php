@@ -12,17 +12,17 @@
     </div>
     @endif
     <div class="align-middle gap-2 d-flex justify-content-between ">
-      <h3>Elenco Libri inseriti</h3>
+      <h3>Lista Libri caricati</h3>
       <a href="{{route('books.create')}}" class="btn btn-success" type="button">Crea Nuovo Libro</a>
     </div>
     <table class="table border mt-2">
       <thead>
         <tr>
           <th scope="col" class="snow-background">#</th>
-          <th scope="col" class="snow-background">Cover</th>
-          <th scope="col" class="snow-background">Nome</th>
-          <th scope="col" class="snow-background">Pagine</th>
-          <th scope="col" class="snow-background">Anno</th>
+          <th scope="col" class="snow-background">COVER</th>
+          <th scope="col" class="snow-background">NOME</th>
+          <th scope="col" class="snow-background">N. PAGINE</th>
+          <th scope="col" class="snow-background">ANNO</th>
           <th scope="col" class="snow-background"></th>
         </tr>
       </thead>

@@ -4,6 +4,22 @@
     background: linear-gradient(to bottom right, #ff48b6, #ff7e6c);
 }
 
+.navbar-thin {
+    height: 60px; /* Imposta l'altezza desiderata */
+    padding: 10px 0; /* Imposta il padding superiore e inferiore desiderato */
+    background-color: #333; /* Imposta il colore di sfondo desiderato */
+    /* Altre proprietà CSS a tua scelta */
+}
+
+.navbar-thin .navbar-brand {
+    font-size: 24px; /* Imposta la dimensione del testo per il logo */
+}
+
+.navbar-thin .btn {
+    font-size: 14px; /* Imposta la dimensione del testo per i pulsanti */
+    padding: 6px 12px; /* Imposta il padding dei pulsanti */
+}
+
 .navbar-hidden {
     transform: translateY(-100%);
     transition: transform 0.25s ease-in-out; /* Animazione più fluida per la scomparsa */
@@ -20,6 +36,17 @@
 
 .footer {
     background: linear-gradient(to bottom right, #ff48b6, #ff7e6c);
+}
+
+.footer-thin {
+    padding: 10px 0; /* Imposta il padding superiore e inferiore desiderato */
+    background-color: #333; /* Imposta il colore di sfondo desiderato */
+    /* Altre proprietà CSS a tua scelta */
+}
+
+.footer-thin p {
+    font-size: 12px; /* Imposta la dimensione del testo per il copyright */
+    color: #fff; /* Imposta il colore del testo desiderato */
 }
 
 .body-background {

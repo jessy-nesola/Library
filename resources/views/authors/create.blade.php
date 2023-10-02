@@ -18,8 +18,8 @@
                             @csrf
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="firstname" name="firstname" required type="text"
-                                    value="{{old('firstname')}}" placeholder="Inserisci Nome Autore">
-                                <label for="firstname">Nome Autore</label>
+                                    value="{{old('firstname')}}" placeholder="Inserisci nome autore">
+                                <label for="firstname">NOME AUTORE</label>
                                 @error('firstname')
                                 <span class="text-danger">
                                     {{$message}}
@@ -30,7 +30,7 @@
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="lastname" name="lastname" type="text"
                                     value="{{old('lastname')}}" placeholder="Inserisci cognome autore">
-                                <label for="lastname">Cognome Autore</label>
+                                <label for="lastname">COGNOME AUTORE</label>
                                 @error('lastname')
                                 <span class="text-danger">
                                     {{$message}}
@@ -41,7 +41,7 @@
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="birthday" name="birthday" type="date"
                                     value="{{old('birthday')}}" placeholder="Inserisci compleanno autore">
-                                <label for="birthday">Età Autore</label>
+                                <label for="birthday">ETÁ AUTORE</label>
                                 @error('birthday')
                                 <span class="text-danger">
                                     {{$message}}

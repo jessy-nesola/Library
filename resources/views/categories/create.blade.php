@@ -19,7 +19,7 @@
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" name="name" required type="text"
                                     value="{{old('name')}}" placeholder="Inserisci Nome Categoria">
-                                <label for="name">Nome Categoria</label>
+                                <label for="name">NOME CATEGORIA</label>
                                 @error('name')
                                 <span class="text-danger">
                                     {{$message}}

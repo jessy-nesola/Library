@@ -17,7 +17,7 @@
                         @csrf
                         @method('POST')
                         <div class="mb-3">
-                            <label for="name" class="form-label text-dark">Nome</label>
+                            <label for="name" class="form-label text-dark">NOME LIBRO</label>
                             <input class="form-control @error('name') is-invalid @enderror" id="name"
                                 value="{{ old('name') }}" name="name" type="text">
                             @error('name')
@@ -25,7 +25,7 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="page" class="form-label text-dark">Pagine</label>
+                            <label for="page" class="form-label text-dark">N. PAGINE</label>
                             <input class="form-control" id="page" name="pages" value="{{ old('pages') }}"
                                 type="text">
                             @error('pages')
@@ -33,14 +33,14 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="image" class="form-label text-dark">Immagine</label>
+                            <label for="image" class="form-label text-dark">IMMAGINE COPERTINA</label>
                             <input class="form-control" id="image" name="image" type="file">
                             @error('image')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="year" class="form-label text-dark">Anno</label>
+                            <label for="year" class="form-label text-dark">ANNO</label>
                             <input class="form-control" id="year" name="year" value="{{ old('year') }}"
                                 type="text">
                             @error('year')
@@ -49,7 +49,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="year" class="form-label text-dark">Seleziona Autore</label>
+                            <label for="year" class="form-label text-dark">SELEZIONA AUTORE</label>
                             <select class="form-control" name="author_id">
                                 @foreach ($authors as $author)
                                 <option value="{{$author->id}}">{{$author->firstname . ' ' . $author->lastname}}</option>

@@ -17,7 +17,7 @@
                         @method('PUT')
                         @csrf
                         <div class="mb-3">
-                            <label for="name" class="form-label text-dark">Nome</label>
+                            <label for="name" class="form-label text-dark">NOME</label>
                             <input class="form-control @error('firstname') is-invalid @enderror" id="firstname"
                                 value="{{$author->firstname}}" name="firstname" type="text" placeholder="Inserisci nome autore">
                             @error('firstname')
@@ -26,7 +26,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="name" class="form-label text-dark">Cognome</label>
+                            <label for="name" class="form-label text-dark">COGNOME</label>
                             <input class="form-control @error('lastname') is-invalid @enderror" id="lastname"
                                 value="{{$author->lastname}}" name="lastname" type="text" placeholder="Inserisci cognome autore">
                             @error('lastname')
@@ -35,16 +35,16 @@
                         </div>
 
                         <div class="mb-3">
-                            <label for="name" class="form-label text-dark">Compleanno</label>
+                            <label for="name" class="form-label text-dark">DATA DI NASCITA</label>
                             <input class="form-control @error('birthday') is-invalid @enderror" id="birthday"
-                            value="{{ isset($author->birthday) ? $author->birthday->format('yy-m-d') : ''}}" placeholder="Inserisci compleanno autore">
+                            value="{{ isset($author->birthday) ? $author->birthday->format('d-m-yy') : ''}}" placeholder="Inserisci compleanno autore">
                             @error('birthday')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                        
                         <div class="d-grid">
-                            <button class="btn btn-primary btn-lg bg-gradient" type="submit">Aggiorna</button>
+                            <button class="btn btn-primary btn-lg bg-gradient" type="submit">AGGIORNA</button>
                         </div>
                     </form>
                 </div>
