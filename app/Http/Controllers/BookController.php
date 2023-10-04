@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\BookStoreRequest;
 use App\Http\Requests\BookUpdateRequest;
 use App\Models\Author;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Models\Book;
 use Illuminate\Support\Str;
@@ -36,7 +37,8 @@ class BookController extends Controller
     public function create()
     {
         $authors = Author::all();
-        return view('books.create', compact('authors'));
+        $categories = Category::all();
+    return view('books.create', compact('authors', 'categories'));
     }
 
     public function store(BookStoreRequest $request)
@@ -56,7 +58,7 @@ class BookController extends Controller
         //Book::create($request->all());
         //secondo metodo
 
-        Book::create([
+        $book = Book::create([
             'name' => $request->name,
             'pages' => $request->pages,
             'year' => $request->year,
@@ -71,6 +73,9 @@ class BookController extends Controller
         //     'pages' => 'required'
         // ]);
         //Book::create($request->validated());
+
+        //Associa categorie
+        $book->categories()->attach($request->categories);
         return redirect()->route('books.index')->with('success', 'Libro Caricato');
     }
 

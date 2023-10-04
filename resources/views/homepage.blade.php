@@ -1,5 +1,4 @@
 <x-layout>
-
     <header class="text-light py-5">
         <div class="container px-5">
             <div class="row gx-5 align-items-center justify-content-center">
@@ -9,7 +8,7 @@
                         <p class="lead">Esplora un mondo di conoscenza e fantasia..</p>
                     </div>
                 </div>
-                <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+                <div class="col-xl-5 col-xxl-6 text-center">
                     <img class="img-fluid rounded-3 my-5 shadow"
                         src="{{ asset('/assets/images/libreria.jpg') }}"
                         alt="Library" />
@@ -17,8 +16,6 @@
             </div>
         </div>
     </header>
-
-
     <div class="container my-5 ">
         <div class="list-group">
             <a href="{{ route('books.index') }}"
@@ -48,5 +45,4 @@
             </a>
         </div>
     </div>
-
 </x-layout>

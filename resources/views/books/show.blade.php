@@ -12,13 +12,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-5 d-none d-xl-block text-center">
+                <div class="col-lg-4 mb-5 text-center">
                     <img class="card-img-top shadow rounded" src="{{empty($book->image) ? '/assets/images/default.jpg' : Storage::url($book->image)}}" alt="..." />
                 </div>
             </div>
         </div>
     </section>
-    
 </x-layout>
-
-

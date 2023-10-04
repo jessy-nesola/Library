@@ -34,7 +34,7 @@
         {{ $slot }}
     </main>
 
-    <footer class="footer footer-thin py-4">
+    <footer class="footer footer-thin py-4 shadow-lg">
         <div class="container px-5">
             <div class="row align-items-center justify-content-center">
                 <div class="col-auto">

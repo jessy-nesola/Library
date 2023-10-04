@@ -12,4 +12,10 @@ class Category extends Model
     protected $fillable = [
         'name',
     ];
+
+    //n a n metodo plurale
+    public function books(){
+
+        return $this->belongsToMany(Book::class);
+    }
 }

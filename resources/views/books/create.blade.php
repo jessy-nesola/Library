@@ -32,6 +32,19 @@
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
+                        @foreach ($categories as $category)
+                            <div class="mb-3">
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input" 
+                                            type="checkbox" 
+                                            value="{{ $category->id }}"
+                                            name="categories[]">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        {{ $category->name }}
+                                    </label>
+                                </div>
+                            </div>
+                        @endforeach
                         <div class="mb-3">
                             <label for="image" class="form-label text-dark">IMMAGINE COPERTINA</label>
                             <input class="form-control" id="image" name="image" type="file">
@@ -52,7 +65,8 @@
                             <label for="year" class="form-label text-dark">SELEZIONA AUTORE</label>
                             <select class="form-control" name="author_id">
                                 @foreach ($authors as $author)
-                                <option value="{{$author->id}}">{{$author->firstname . ' ' . $author->lastname}}</option>
+                                    <option value="{{ $author->id }}">
+                                        {{ $author->firstname . ' ' . $author->lastname }}</option>
                                 @endforeach
                             </select>
                         </div>

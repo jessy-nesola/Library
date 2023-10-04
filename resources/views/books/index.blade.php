@@ -1,4 +1,5 @@
 <x-layout>
+  
   <div class="container mt-5">
 
     @if (session('success'))
@@ -57,4 +58,5 @@
       </tbody>
     </table>
   </div>
+
 </x-layout>

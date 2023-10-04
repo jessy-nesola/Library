@@ -26,7 +26,9 @@
 }
 
 .navbar-visible {
-    transform: translateY(0); /* Riporta la navbar nella posizione di partenza */
+    transform: translateY(
+        0
+    ); /* Riporta la navbar nella posizione di partenza */
     transition: transform 0.25s ease-in-out; /* Animazione più fluida per la riapparizione */
 }
 

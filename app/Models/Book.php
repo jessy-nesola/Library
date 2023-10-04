@@ -20,4 +20,10 @@ class Book extends Model
         //belongs to = appartiene
         return $this->belongsTo(Author::class);
     }
+    
+    //n a n metodo plurale
+    public function categories(){
+
+        return $this->belongsToMany(Category::class);
+    }
 }
