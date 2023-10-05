@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "animate.css";
+
 
 .navbar {
     background: linear-gradient(to bottom right, #ff48b6, #ff7e6c);
