@@ -102,7 +102,8 @@ class BookController extends Controller
     public function edit(Book $book)
     {
         $authors = Author::all(); 
-        return view('books.edit', compact('book', 'authors'));
+        $categories = Category::all();
+        return view('books.edit', compact('book', 'authors', 'categories'));
     }
 
     public function update(BookUpdateRequest $request, Book $book)
@@ -122,6 +123,9 @@ class BookController extends Controller
             // 'uri' => Str::slug($request->name, '-')
         ]);
 
+        // stacco e attacco
+        $book->categories()->detach();
+        $book->categories()->attach($request->categories);
         return redirect()->route('books.index')->with('success', 'Libro Aggiornato');
     }
 

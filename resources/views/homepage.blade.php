@@ -4,8 +4,8 @@
             <div class="row gx-5 align-items-center justify-content-center">
                 <div class="col-lg-8 col-xl-7 col-xxl-6">
                     <div class="my-5 text-center text-xl-start text-dark">
-                        <h1 class="display-5 fw-bold animate__animated animate__bounce animate__repeat-2">Benvenuto nella Libreria</h1>
-                        <p class="lead animate__animated animate__bounce animate__repeat-2">Esplora un mondo di conoscenza e fantasia..</p>
+                        <h1 class="display-5 fw-bold animate__animated animate__zoomInDown">Benvenuto nella Libreria</h1>
+                        <p class="lead animate__animated animate__zoomInDown">Esplora un mondo di conoscenza e fantasia..</p>
                     </div>
                 </div>
                 <div class="col-xl-5 col-xxl-6 text-center">

@@ -11,8 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('books_category', function (Blueprint $table) {
-            $table->id();
+        Schema::create('book_category', function (Blueprint $table) {
+            // $table->id();
+            $table->primary(['book_id','category_id']);
 
             // creo colonne con chiavi esterne
             $table->unsignedBigInteger('book_id');
@@ -43,7 +44,7 @@ return new class extends Migration
 
     public function down(): void
     {
-        Schema::table('books_category', function (Blueprint $table) {
+        Schema::table('book_category', function (Blueprint $table) {
             $table->dropForeign(['book_id', 'category_id']);
             $table->dropColumn(['book_id', 'category_id']);
         });
